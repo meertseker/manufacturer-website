@@ -7,10 +7,12 @@ import Footer from "./components/Footer";
 import Card from "./components/Card";
 import Contact from "./components/Contact";
 import MapView from "./components/MapView";
+import { LanguageProvider } from "./components/LanguageToggle";
 
 export default function Home() {
   return (
     <>
+    <LanguageProvider>
     <div className="min-h-screen bg-white">
     <Header/>
 
@@ -24,6 +26,7 @@ export default function Home() {
     <MapView/>
     <Footer/>
     </div>
+    </LanguageProvider>
     </>
   );
 }
