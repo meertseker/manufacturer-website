@@ -8,6 +8,7 @@ import Card from "./components/Card";
 import Contact from "./components/Contact";
 import MapView from "./components/MapView";
 import { LanguageProvider } from "./components/LanguageToggle";
+import Categories from "./components/Categories";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <Header/>
 
     <Intro/>
+    <Categories/>
 
     <Products/>
     <About/>
