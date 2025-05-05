@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import LanguageToggle, { useLanguage } from './LanguageToggle';
@@ -29,11 +29,40 @@ type ContentType = {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const { language } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Control header visibility based on scroll direction
+  useEffect(() => {
+    const controlHeader = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Make header visible when scrolling up or at the top
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        setIsVisible(true);
+      } 
+      // Hide header when scrolling down (after scrolling a bit)
+      else if (currentScrollY > 10 && currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      }
+      
+      // Update the last scroll position
+      setLastScrollY(currentScrollY);
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', controlHeader);
+    
+    // Clean up
+    return () => {
+      window.removeEventListener('scroll', controlHeader);
+    };
+  }, [lastScrollY]);
 
   // Navigation content in both languages
   const content: ContentType = {
@@ -62,7 +91,11 @@ const Header = () => {
 
   return (
     <div className="relative">
-      <header className="bg-white px-4 md:px-8 py-4 flex items-center justify-between">
+      <header 
+        className={`bg-white px-4 md:px-8 py-4 flex items-center justify-between fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${
+          isVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
         {/* Logo */}
         <div className="flex items-center font-bold text-lg md:text-xl text-indigo-900">
           <div className="w-18 h-18">
@@ -118,9 +151,12 @@ const Header = () => {
         </div>
       </header>
 
+      {/* Spacer to prevent content from hiding behind fixed header */}
+      <div className="h-20"></div>
+
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-orange-50 shadow-md z-50 py-4 px-6 flex flex-col space-y-4 text-slate-800 font-medium">
+      {isMenuOpen && isVisible && (
+        <div className="md:hidden fixed top-26 left-0 right-0 bg-white shadow-md z-40 py-4 px-6 flex flex-col space-y-4 text-slate-800 font-medium transition-transform duration-300">
           <Link href="/" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.home}
           </Link>

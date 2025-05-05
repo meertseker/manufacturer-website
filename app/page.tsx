@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/Header";
 import Products from "./components/Products";
 import Intro from "./components/Intro";
@@ -16,14 +15,11 @@ export default function Home() {
     <LanguageProvider>
     <div className="min-h-screen bg-white">
     <Header/>
-
-    <Intro/>
+    <Intro />
     <Categories/>
-
     <Products/>
     <About/>
     <Contact/>
-    
     <Card/>
     <MapView/>
     <Footer/>

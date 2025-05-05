@@ -47,67 +47,67 @@ const Categories = () => {
   const categories: CategoryType[] = [
     {
       id: "tea-machine",
-      image: "/tea-2.png",
+      image: "/1.png",
       tr: "ÇAY MAKİNESİ ISITICI ELEMANLARI",
       en: "TEA MAKING MACHINE HEATING ELEMENTS"
     },
     {
       id: "deep-fryer",
-      image: "/fritoz.png",
+      image: "/2.png",
       tr: "DERİN FRİTÖZ ISITICI ELEMANLARI",
       en: "DEEP FRYER HEATING ELEMENTS"
     },
     {
       id: "toaster-grill",
-      image: "/toaster.png",
+      image: "/3.png",
       tr: "TOST VE IZGARA ISITICI ELEMANLARI",
       en: "TOASTER AND GRILL HEATING ELEMENTS"
     },
     {
       id: "bain-marie",
-      image: "/benmari.png",
+      image: "/4.png",
       tr: "BENMARI ISITICI ELEMANLARI",
       en: "BAIN-MARIE HEATING ELEMENTS"
     },
     {
       id: "boiler",
-      image: "/boiler.png",
+      image: "/5.png",
       tr: "BOYLER ISITICI ELEMANLARI",
       en: "BOILER HEATING ELEMENTS"
     },
     {
       id: "washing-dishwasher",
-      image: "/dishwash.png",
+      image: "/6.png",
       tr: "ÇAMAŞIR VE BULAŞIK MAKİNESİ ISITICI ELEMANLARI",
       en: "WASHING AND DISHWASHER MACHINE HEATING ELEMENTS"
     },
     {
       id: "straight",
-      image: "/duz.png",
+      image: "/7.png",
       tr: "DÜZ ISITICI ELEMANLARI",
       en: "STRAIGHT HEATING ELEMENTS"
     },
     {
       id: "oven",
-      image: "/categories/oven.png",
+      image: "/8.png",
       tr: "FIRIN ISITICI ELEMANLARI",
       en: "OVEN HEATING ELEMENTS"
     },
     {
       id: "finned",
-      image: "/categories/finned.png",
+      image: "/9.png",
       tr: "KANATLİ ISITICI ELEMANLARI",
       en: "FINNED HEATING ELEMENTS"
     },
     {
       id: "iron",
-      image: "/categories/iron.png",
+      image: "/10.png",
       tr: "ÜTÜ ISITICI ELEMANLARI",
       en: "IRON HEATING ELEMENTS"
     },
     {
       id: "technical",
-      image: "/categories/technical.png",
+      image: "/11.png",
       tr: "TEKNİK MALZEMELER",
       en: "TECHNICAL MATERIALS"
     }
