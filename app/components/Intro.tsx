@@ -53,7 +53,7 @@ const Intro = () => {
               <a href="#" className="bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 min-w-36 text-center shadow-md">
                 {t.contactButton}
               </a>
-              <a href="#" className="flex items-center justify-center gap-2 text-white font-medium hover:text-indigo-200 transition-colors duration-200">
+              <a href="/products" className="flex items-center justify-center gap-2 text-white font-medium hover:text-indigo-200 transition-colors duration-200">
                 <span className="flex items-center justify-center bg-[#2f92d0] text-white rounded-full w-8 h-8">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
