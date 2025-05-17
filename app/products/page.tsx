@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,Suspense } from 'react';
 import Image from 'next/image';
 import { useLanguage } from '../components/LanguageToggle';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -246,6 +246,7 @@ const Products = () => {
 
   return (
     <LanguageProvider>
+    <Suspense fallback={<div>Loading products...</div>}></Suspense>
     <div className="py-16 bg-gray-50 min-h-screen">
       <Header/>
       <div className="container mx-auto px-4 md:px-6">
