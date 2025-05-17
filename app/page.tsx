@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <>
     <LanguageProvider>
-    <div className="min-h-screen bg-white">
-    <Header/>
-    <Intro />
-    <Categories/>
-    <Products/>
-    <About/>
-    <Contact/>
-    <Card/>
-    <MapView/>
-    <Footer/>
-    </div>
+      <div className="min-h-screen bg-white">
+        <Header/>
+        <Intro />
+        <Categories/>
+        <Products/>
+        <About/>
+        <Contact/>
+        <Card/>
+        <MapView/>
+        <Footer/>
+      </div>
     </LanguageProvider>
     </>
   );
