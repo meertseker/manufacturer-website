@@ -334,5 +334,5 @@ const Products = () => {
     </LanguageProvider>
   );
 };
-
+export const dynamic = 'force-dynamic';
 export default Products;
