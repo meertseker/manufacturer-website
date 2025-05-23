@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect ,Suspense } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import { useLanguage } from '../components/LanguageToggle';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -46,7 +46,8 @@ type ContentType = {
   };
 };
 
-const Products = () => {
+// Create a new component that uses useSearchParams
+const ProductsContent = () => {
   const { language } = useLanguage();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -335,5 +336,15 @@ const Products = () => {
     </LanguageProvider>
   );
 };
+
+// Main Products component
+const Products = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductsContent />
+    </Suspense>
+  );
+};
+
 export const dynamic = 'force-dynamic';
 export default Products;
