@@ -43,6 +43,7 @@ type ContentType = {
     };
     error: string;
     success: string;
+    captchaError: string;
   };
   en: {
     title: string;
@@ -79,6 +80,7 @@ type ContentType = {
     };
     error: string;
     success: string;
+    captchaError: string;
   };
 };
 
@@ -87,6 +89,7 @@ const Contact = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaError, setCaptchaError] = useState<string | null>(null);
 
   // Content in both languages
   const content: ContentType = {
@@ -124,7 +127,8 @@ const Contact = () => {
         button: 'Gönder',
       },
       error: "Lütfen captcha'yı doğrulayın ve tekrar deneyin.",
-      success: "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız."
+      success: "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+      captchaError: "Captcha yüklenemedi. Lütfen sayfayı yenileyin veya daha sonra tekrar deneyin."
     },
     en: {
       title: 'Contact Us',
@@ -160,7 +164,8 @@ const Contact = () => {
         button: 'Send',
       },
       error: "Please verify the captcha and try again.",
-      success: "Your message has been sent successfully. We will get back to you soon."
+      success: "Your message has been sent successfully. We will get back to you soon.",
+      captchaError: "Failed to load captcha. Please refresh the page or try again later."
     },
   };
 
@@ -169,14 +174,21 @@ const Contact = () => {
 
   const handleCaptchaVerify = (token: string) => {
     setCaptchaToken(token);
-    setFormStatus('idle'); // Reset any error state when captcha is verified
+    setFormStatus('idle');
+    setCaptchaError(null);
   };
 
   // Handle form submission
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     
-    if (!captchaToken) {
+    if (!captchaToken && !captchaError) {
+      setFormStatus('error');
+      return;
+    }
+
+    // If there's a captcha error, show the specific error message
+    if (captchaError) {
       setFormStatus('error');
       return;
     }
@@ -317,16 +329,22 @@ const Contact = () => {
 
               {/* ReCaptcha */}
               <div className="mt-6">
-                <ReCaptcha onVerify={handleCaptchaVerify} />
+                <ReCaptcha 
+                  onVerify={handleCaptchaVerify} 
+                  onError={() => {
+                    setCaptchaError(t.captchaError);
+                    setCaptchaToken(null);
+                  }}
+                />
               </div>
               
               {/* Form Button */}
               <div className="mt-8 flex justify-center">
                 <button
                   onClick={handleSubmit}
-                  disabled={!captchaToken || isSubmitting}
+                  disabled={(!captchaToken && !captchaError) || isSubmitting}
                   className={`bg-blue-600 text-white font-medium px-8 py-3 rounded-full transition-colors duration-200 shadow-md flex items-center ${
-                    (!captchaToken || isSubmitting) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-purple-700'
+                    (!captchaToken && !captchaError) || isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-purple-700'
                   }`}
                 >
                   {isSubmitting ? (
@@ -352,7 +370,7 @@ const Contact = () => {
 
               {formStatus === 'error' && (
                 <div className="mt-4 p-4 bg-red-50 text-red-700 rounded-lg text-center">
-                  {t.error}
+                  {captchaError || t.error}
                 </div>
               )}
             </div>
