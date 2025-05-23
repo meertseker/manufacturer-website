@@ -50,7 +50,7 @@ const Intro = () => {
               {t.titlePart2}
             </h1>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-              <a href="#" className="bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 min-w-36 text-center shadow-md">
+              <a href="/contact" className="bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 min-w-36 text-center shadow-md">
                 {t.contactButton}
               </a>
               <a href="/products" className="flex items-center justify-center gap-2 text-white font-medium hover:text-indigo-200 transition-colors duration-200">

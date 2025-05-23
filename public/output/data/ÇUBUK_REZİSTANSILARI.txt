@@ -1,0 +1,10 @@
+Name: MUHTELİF ÇUBUK REZİSTANSLAR
+URL: https://www.hasmar.com.tr/details/7/168/muhtelif-cubuk-rezistanslar
+Image URL: https://www.hasmar.com.tr/images/product/05a0a42c-62ff-.jpg
+Saved Image: output/images/MUHTELİF ÇUBUK REZİSTANSLAR.jpg
+--------------------------------------------------
+Name: MUHTELİF DEFROST SOĞUTUCU REZİSTANSLAR
+URL: https://www.hasmar.com.tr/details/7/169/muhtelif-defrost-sogutucu-rezistanslar
+Image URL: https://www.hasmar.com.tr/images/product/530247aa-e2f7-.jpg
+Saved Image: output/images/MUHTELİF DEFROST SOĞUTUCU REZİSTANSLAR.jpg
+--------------------------------------------------

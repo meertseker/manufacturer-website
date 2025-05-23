@@ -58,7 +58,7 @@ To provide permanent advantages by creating differences in heaters production`,
                 {t.aboutTitle}
               </h2>
               <p className="text-gray-700 mb-6">{t.aboutText}</p>
-              <a href="#" className="inline-block bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 shadow-sm">
+              <a href="/corporate" className="inline-block bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 shadow-sm">
                 {t.buttonText}
               </a>
             </div>
@@ -87,7 +87,7 @@ To provide permanent advantages by creating differences in heaters production`,
                 {t.missionTitle}
               </h2>
               <p className="text-gray-700 mb-6">{t.missionText}</p>
-              <a href="#" className="inline-block bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 shadow-sm">
+              <a href="/corporate" className="inline-block bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 shadow-sm">
                 {t.buttonText}
               </a>
             </div>

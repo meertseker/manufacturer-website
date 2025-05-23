@@ -1,0 +1,40 @@
+Name: FRİTÖZ REZİSTANSI 3LT
+URL: https://www.hasmar.com.tr/details/7/103/fritoz-rezistansi-3lt
+Image URL: https://www.hasmar.com.tr/images/product/03254ecc-95bd-.jpg
+Saved Image: output/images/FRİTÖZ REZİSTANSI 3LT.jpg
+--------------------------------------------------
+Name: FRİTÖZ REZİSTANSI 5LT
+URL: https://www.hasmar.com.tr/details/7/104/fritoz-rezistansi-5lt
+Image URL: https://www.hasmar.com.tr/images/product/67056fa1-e6a1-.jpg
+Saved Image: output/images/FRİTÖZ REZİSTANSI 5LT.jpg
+--------------------------------------------------
+Name: FRİTÖZ REZİSTANSI SİPİRLİ
+URL: https://www.hasmar.com.tr/details/7/105/fritoz-rezistansi-sipirli
+Image URL: https://www.hasmar.com.tr/images/product/337caf55-74f7-.jpg
+Saved Image: output/images/FRİTÖZ REZİSTANSI SİPİRLİ.jpg
+--------------------------------------------------
+Name: FRİTÖZ REZİSTANS
+URL: https://www.hasmar.com.tr/details/7/106/fritoz-rezistans
+Image URL: https://www.hasmar.com.tr/images/product/592b969f-7427-.jpg
+Saved Image: output/images/FRİTÖZ REZİSTANS.jpg
+--------------------------------------------------
+Name: FRİTÖZ REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/107/fritoz-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/c3937a54-146b-.jpg
+Saved Image: output/images/FRİTÖZ REZİSTANSI.jpg
+--------------------------------------------------
+Name: FRİTÖZ REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/108/fritoz-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/8ecf544c-c704-.jpg
+Saved Image: output/images/FRİTÖZ REZİSTANSI.jpg
+--------------------------------------------------
+Name: FLANŞLI FRİTÖZ REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/109/flansli-fritoz-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/a30f9c22-6314-.jpg
+Saved Image: output/images/FLANŞLI FRİTÖZ REZİSTANSI.jpg
+--------------------------------------------------
+Name: MAKARNA HAŞLAMA REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/110/makarna-haslama-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/12674373-67a9-.jpg
+Saved Image: output/images/MAKARNA HAŞLAMA REZİSTANSI.jpg
+--------------------------------------------------

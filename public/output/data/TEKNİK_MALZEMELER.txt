@@ -1,0 +1,30 @@
+Name: GAZLI KAPİLER TERMOSTAT WY40C-P
+URL: https://www.hasmar.com.tr/details/7/175/gazli-kapiler-termostat-wy40c-p
+Image URL: https://www.hasmar.com.tr/images/product/a040e97f-787a-.jpg
+Saved Image: output/images/GAZLI KAPİLER TERMOSTAT WY40C-P.jpg
+--------------------------------------------------
+Name: GAZLI KAPİLER TERMOSTAT WY90Q-C
+URL: https://www.hasmar.com.tr/details/7/176/gazli-kapiler-termostat-wy90q-c
+Image URL: https://www.hasmar.com.tr/images/product/2874da63-6192-.jpg
+Saved Image: output/images/GAZLI KAPİLER TERMOSTAT WY90Q-C.jpg
+--------------------------------------------------
+Name: LİMİT TERMOSTAT / AÇIK-KAPALI
+URL: https://www.hasmar.com.tr/details/7/177/limit-termostat-acik-kapali
+Image URL: https://www.hasmar.com.tr/images/product/c8a31837-175a-.jpg
+Saved Image: output/images/LİMİT TERMOSTAT _ AÇIK-KAPALI.jpg
+--------------------------------------------------
+Name: RADYATÖR TERMOSTATI
+URL: https://www.hasmar.com.tr/details/7/178/radyator-termostati
+Image URL: https://www.hasmar.com.tr/images/product/1595fa97-80cd-.jpg
+Saved Image: output/images/RADYATÖR TERMOSTATI.jpg
+--------------------------------------------------
+Name: TERMOSTAT KAPAK YNASI
+URL: https://www.hasmar.com.tr/details/7/179/termostat-kapak-ynasi
+Image URL: https://www.hasmar.com.tr/images/product/b94a89e4-00d5-.jpg
+Saved Image: output/images/TERMOSTAT KAPAK YNASI.jpg
+--------------------------------------------------
+Name: QUARTZ CAM ISITICI
+URL: https://www.hasmar.com.tr/details/7/180/quartz-cam-isitici
+Image URL: https://www.hasmar.com.tr/images/product/8830e5c1-7b83-.jpg
+Saved Image: output/images/QUARTZ CAM ISITICI.jpg
+--------------------------------------------------

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useLanguage } from './LanguageToggle';
 
 // Define content type for categories
@@ -96,8 +97,8 @@ const Categories = () => {
     {
       id: "finned",
       image: "/9.png",
-      tr: "KANATLİ ISITICI ELEMANLARI",
-      en: "FINNED HEATING ELEMENTS"
+      tr: "SERPANTİNLİ REZİSTANSLAR",
+      en: "SERPENTINE HEATING ELEMENTS"
     },
     {
       id: "iron",
@@ -130,8 +131,9 @@ const Categories = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {categories.map((category) => (
-            <div 
+            <Link 
               key={category.id}
+              href={`/products?category=${category.id}`}
               className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
             >
               <div className="h-48 relative bg-gray-100">
@@ -149,15 +151,14 @@ const Categories = () => {
                   {category[language]}
                 </h3>
                 <div className="mt-4 text-center">
-                  <a 
-                    href={`/products/${category.id}`}
+                  <span 
                     className="inline-block bg-[#2f92d0] hover:bg-blue-500 text-white font-medium px-4 py-2 rounded-full transition-colors duration-200 text-sm"
                   >
                     {t.buttonText}
-                  </a>
+                  </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

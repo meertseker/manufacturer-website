@@ -97,12 +97,13 @@ const Header = () => {
         }`}
       >
         {/* Logo */}
+        <Link href="/">
         <div className="flex items-center font-bold text-lg md:text-xl text-indigo-900">
           <div className="w-18 h-18">
             <Image src="/logo.png" alt="Logo" width={400} height={400} />
           </div>
         </div>
-
+        </Link>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm lg:text-base text-black font-medium pl-30">
           <Link href="/" className="hover:text-indigo-700 transition-colors duration-200">

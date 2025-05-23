@@ -1,0 +1,25 @@
+Name: KAYNAK MAKİNASI REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/170/kaynak-makinasi-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/c09400a3-2cc0-.jpg
+Saved Image: output/images/KAYNAK MAKİNASI REZİSTANSI.jpg
+--------------------------------------------------
+Name: KAYNAK MAKİNASI REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/171/kaynak-makinasi-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/aa7dbde3-480c-.jpg
+Saved Image: output/images/KAYNAK MAKİNASI REZİSTANSI.jpg
+--------------------------------------------------
+Name: KAYNAK MAKİNASI REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/172/kaynak-makinasi-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/5f869bc2-049f-.jpg
+Saved Image: output/images/KAYNAK MAKİNASI REZİSTANSI.jpg
+--------------------------------------------------
+Name: BUHAR ÜTÜSÜ REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/173/buhar-utusu-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/d50f05db-ff87-.jpg
+Saved Image: output/images/BUHAR ÜTÜSÜ REZİSTANSI.jpg
+--------------------------------------------------
+Name: PASKARA ÜTÜ REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/174/paskara-utu-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/d9f691b4-4a38-.jpg
+Saved Image: output/images/PASKARA ÜTÜ REZİSTANSI.jpg
+--------------------------------------------------

@@ -1,0 +1,25 @@
+Name: DÜZ ÇUBUK SERPANTİNLİ REZİZTANSI
+URL: https://www.hasmar.com.tr/details/7/111/duz-cubuk-serpantinli-reziztansi
+Image URL: https://www.hasmar.com.tr/images/product/4ca6b166-bd6e-.jpg
+Saved Image: output/images/DÜZ ÇUBUK SERPANTİNLİ REZİZTANSI.jpg
+--------------------------------------------------
+Name: U TİPİ SERPANTİNLİ REZİSTANS
+URL: https://www.hasmar.com.tr/details/7/112/u-tipi-serpantinli-rezistans
+Image URL: https://www.hasmar.com.tr/images/product/c10f8130-6737-.jpg
+Saved Image: output/images/U TİPİ SERPANTİNLİ REZİSTANS.jpg
+--------------------------------------------------
+Name: M TİPİ SERPANTİNLİ REZİSTANS
+URL: https://www.hasmar.com.tr/details/7/113/m-tipi-serpantinli-rezistans
+Image URL: https://www.hasmar.com.tr/images/product/3836b047-47a2-.jpg
+Saved Image: output/images/M TİPİ SERPANTİNLİ REZİSTANS.jpg
+--------------------------------------------------
+Name: SALYANGOZ TİPİ SERPANTİNLİ REZİSTANS
+URL: https://www.hasmar.com.tr/details/7/114/salyangoz-tipi-serpantinli-rezistans
+Image URL: https://www.hasmar.com.tr/images/product/652751a2-ae67-.jpg
+Saved Image: output/images/SALYANGOZ TİPİ SERPANTİNLİ REZİSTANS.jpg
+--------------------------------------------------
+Name: HAVA PERDESİ REZİSTANSI
+URL: https://www.hasmar.com.tr/details/7/115/hava-perdesi-rezistansi
+Image URL: https://www.hasmar.com.tr/images/product/c5c274bf-6d01-.jpg
+Saved Image: output/images/HAVA PERDESİ REZİSTANSI.jpg
+--------------------------------------------------
