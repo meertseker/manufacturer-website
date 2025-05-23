@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from './LanguageToggle';
@@ -19,28 +19,33 @@ type ContentType = {
     title: string;
     subtitle: string;
     buttonText: string;
+    loadMore: string;
   };
   en: {
     title: string;
     subtitle: string;
     buttonText: string;
+    loadMore: string;
   };
 };
 
 const Categories = () => {
   const { language } = useLanguage();
+  const [visibleCategories, setVisibleCategories] = useState(4);
 
   // Content in both languages
   const content: ContentType = {
     tr: {
       title: "Ürün Kategorileri",
       subtitle: "Yüksek kaliteli ısıtıcı elemanları çeşitlerimizi keşfedin",
-      buttonText: "Detayları Gör"
+      buttonText: "Detayları Gör",
+      loadMore: "Daha Fazla Göster"
     },
     en: {
       title: "Product Categories",
       subtitle: "Discover our range of high-quality heating elements",
-      buttonText: "View Details"
+      buttonText: "View Details",
+      loadMore: "Load More"
     }
   };
 
@@ -117,6 +122,13 @@ const Categories = () => {
   // Get current language content
   const t = content[language];
 
+  const handleLoadMore = () => {
+    setVisibleCategories(prev => Math.min(prev + 4, categories.length));
+  };
+
+  const visibleCategoriesList = categories.slice(0, visibleCategories);
+  const hasMoreCategories = visibleCategories < categories.length;
+
   return (
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
@@ -130,7 +142,7 @@ const Categories = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {categories.map((category) => (
+          {visibleCategoriesList.map((category) => (
             <Link 
               key={category.id}
               href={`/products?category=${category.id}`}
@@ -161,6 +173,17 @@ const Categories = () => {
             </Link>
           ))}
         </div>
+
+        {hasMoreCategories && (
+          <div className="text-center mt-8">
+            <button
+              onClick={handleLoadMore}
+              className="bg-white border-2 border-[#2f92d0] text-[#2f92d0] hover:bg-[#2f92d0] hover:text-white font-medium px-6 py-3 rounded-full transition-colors duration-200"
+            >
+              {t.loadMore}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
