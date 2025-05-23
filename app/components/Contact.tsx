@@ -24,17 +24,6 @@ type ContentType = {
         label: string;
         placeholder: string;
       };
-      subject: {
-        label: string;
-        placeholder: string;
-        options: {
-          registration: string;
-          program: string;
-          price: string;
-          visit: string;
-          other: string;
-        };
-      };
       message: {
         label: string;
         placeholder: string;
@@ -60,17 +49,6 @@ type ContentType = {
       phone: {
         label: string;
         placeholder: string;
-      };
-      subject: {
-        label: string;
-        placeholder: string;
-        options: {
-          registration: string;
-          program: string;
-          price: string;
-          visit: string;
-          other: string;
-        };
       };
       message: {
         label: string;
@@ -109,17 +87,6 @@ const Contact = () => {
           label: 'Telefon Numaranız',
           placeholder: '05XX XXX XX XX',
         },
-        subject: {
-          label: 'Konu',
-          placeholder: 'Lütfen bir konu seçin',
-          options: {
-            registration: 'Kayıt Bilgileri',
-            program: 'Eğitim Programları',
-            price: 'Fiyat Bilgisi',
-            visit: 'Ziyaret Talebi',
-            other: 'Diğer',
-          },
-        },
         message: {
           label: 'Mesajınız',
           placeholder: 'Bizimle paylaşmak istediğiniz mesajınızı buraya yazabilirsiniz...',
@@ -145,17 +112,6 @@ const Contact = () => {
         phone: {
           label: 'Phone Number',
           placeholder: '05XX XXX XX XX',
-        },
-        subject: {
-          label: 'Subject',
-          placeholder: 'Please select a subject',
-          options: {
-            registration: 'Registration Information',
-            program: 'Educational Programs',
-            price: 'Price Information',
-            visit: 'Visit Request',
-            other: 'Other',
-          },
         },
         message: {
           label: 'Your Message',
@@ -202,7 +158,6 @@ const Contact = () => {
         name: (form.querySelector('#name') as HTMLInputElement)?.value,
         email: (form.querySelector('#email') as HTMLInputElement)?.value,
         phone: (form.querySelector('#phone') as HTMLInputElement)?.value,
-        subject: (form.querySelector('#subject') as HTMLSelectElement)?.value,
         message: (form.querySelector('#message') as HTMLTextAreaElement)?.value,
         'g-recaptcha-response': captchaToken,
       };
@@ -289,27 +244,6 @@ const Contact = () => {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-purple-500"
                   placeholder={t.form.phone.placeholder}
                 />
-              </div>
-              
-              {/* Subject Field */}
-              <div className="mt-6">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                  {t.form.subject.label}
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-purple-500"
-                  required
-                  defaultValue=""
-                >
-                  <option value="" disabled>{t.form.subject.placeholder}</option>
-                  <option value="kayit">{t.form.subject.options.registration}</option>
-                  <option value="program">{t.form.subject.options.program}</option>
-                  <option value="fiyat">{t.form.subject.options.price}</option>
-                  <option value="ziyaret">{t.form.subject.options.visit}</option>
-                  <option value="diger">{t.form.subject.options.other}</option>
-                </select>
               </div>
               
               {/* Message Field */}
