@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useLanguage } from '../components/LanguageToggle';
 import { LanguageProvider } from '../components/LanguageToggle';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 type ContentType = {
   tr: {
@@ -111,6 +112,7 @@ const CertificatesContent = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

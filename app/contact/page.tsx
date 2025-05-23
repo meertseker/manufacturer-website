@@ -8,6 +8,7 @@ import Image from 'next/image';
 import ReCaptcha from '../components/ReCaptcha';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_CONFIG } from '../config/emailjs';
+import Footer from '../components/Footer';
 
 type ContentType = {
   tr: {
@@ -164,7 +165,7 @@ const ContactContent = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto text-black">
             {/* Contact Information */}
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="text-2xl font-bold text-indigo-900 mb-6">
@@ -308,6 +309,7 @@ const ContactContent = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

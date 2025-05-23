@@ -11,9 +11,11 @@ const Footer = () => {
   };
 
   return (
-    <div className='bg-blue-800 mt-20 py-4 text-white text-center'>
-      <p>©2025 {content[language]}</p>
-    </div>
+    <footer className='bg-[#2f92d0] text-white'>
+      <div className='container mx-auto px-4 py-6 text-center'>
+        <p>©2025 {content[language]}</p>
+      </div>
+    </footer>
   )
 }
 

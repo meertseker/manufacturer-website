@@ -7,6 +7,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Header from '../components/Header';
 import { LanguageProvider } from '../components/LanguageToggle';
 import { ProductCategory } from '../lib/products';
+import Footer from '../components/Footer';
 
 type ContentType = {
   tr: {
@@ -190,6 +191,7 @@ const ProductsContent = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

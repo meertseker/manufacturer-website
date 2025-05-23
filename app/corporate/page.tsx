@@ -5,6 +5,7 @@ import { useLanguage } from '../components/LanguageToggle';
 import { LanguageProvider } from '../components/LanguageToggle';
 import Header from '../components/Header';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 type ContentType = {
   tr: {
@@ -165,6 +166,7 @@ const CorporateContent = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
