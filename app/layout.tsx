@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hasmar",
-  description: "Hasmars",
+  description: "Endüstriyel Isıtıcı Rezistans Üretimi",
   icons: [
     {url: "./logo.png"}
   ]
