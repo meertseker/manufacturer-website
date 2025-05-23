@@ -108,13 +108,13 @@ const Header = () => {
           <Link href="/" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.home}
           </Link>
-          <Link href="/siniflar" className="hover:text-indigo-700 transition-colors duration-200">
+          <Link href="/corporate" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.corporate}
           </Link>
-          <Link href="/" className="hover:text-indigo-700 transition-colors duration-200">
+          <Link href="/products" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.products}
           </Link>
-          <Link href="/bultenler" className="hover:text-indigo-700 transition-colors duration-200">
+          <Link href="/certificates" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.certificates}
           </Link>
         </nav>
@@ -122,12 +122,12 @@ const Header = () => {
         {/* Right side: Language Toggle + Contact Button */}
         <div className="hidden md:flex items-center space-x-4">
           <LanguageToggle />
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="bg-[#2f92d0] text-white text-sm px-5 py-2 rounded-full hover:bg-red-800 transition-colors duration-200 shadow-sm"
           >
             {t.contact}
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -160,21 +160,21 @@ const Header = () => {
           <Link href="/" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.home}
           </Link>
-          <Link href="/siniflar" className="hover:text-indigo-700 transition-colors duration-200">
+          <Link href="/corporate" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.corporate}
           </Link>
-          <Link href="/" className="hover:text-indigo-700 transition-colors duration-200">
+          <Link href="/products" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.products}
           </Link>
-          <Link href="/bultenler" className="hover:text-indigo-700 transition-colors duration-200">
+          <Link href="/certificates" className="hover:text-indigo-700 transition-colors duration-200">
             {t.nav.certificates}
           </Link>
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="bg-indigo-700 text-white text-center py-2 rounded-full hover:bg-indigo-800 transition-colors duration-200 mt-2 shadow-sm"
           >
             {t.contact}
-          </a>
+          </Link>
         </div>
       )}
     </div>
